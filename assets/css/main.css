@@ -3371,10 +3371,39 @@ html {
 	color: var(--theme-green);
 }
 
+.action-btn {
+	display: block;
+	background-color: var(--theme-green);
+	color: var(--mid-purple);
+	padding: .5em .5em;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 17pt;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	max-width: 200px;
+}
+
+.action-btn:hover {
+	background-color: var(--theme-light-green);
+	color: var(--dark-purple)!important;
+}
+
+.action-btn:active {
+	background-color: #9dc322;
+	color: var(--dark-purple)!important;
+}
+
 .proj-btns {
 	display: flex;
-	
 }
+
 
 /* .live-container {
 	background-color: var(--theme-green);
@@ -3438,7 +3467,6 @@ html {
 	color: var(--theme-light-green)!important;
 }
 
-
 form {
 	color: rgb(195, 195, 195);
 }
@@ -3464,6 +3492,42 @@ input[type="text"], input[type="email"], textarea {
 	background-color: #2c1646;
 }
 
-/* .custom {
-	font-size: 30px;
+@media screen and (max-width: 1680px) {
+	.action-btn {
+		font-size: 15pt;
+		padding: .5em 1em;
+		max-width: 150px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.action-btn {
+		font-size: 13pt;
+	}
+}
+
+/* @media screen and (max-width: 1024px) {
+	.action-btn {
+		font-size: ;
+	}
 } */
+
+@media screen and (max-width: 736px) {
+	.action-btn {
+		font-size: 12pt;
+	}
+}
+
+/* @media screen and (max-width: 480px) {
+	.action-btn {
+		font-size: 12pt;
+	}
+} */
+
+@media screen and (min-width: 100px) and (max-width: 736px) {
+	.action-btn {
+		margin-bottom: 2em;
+	}
+}
+
+

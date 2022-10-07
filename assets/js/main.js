@@ -157,3 +157,11 @@
 		});
 
 })(jQuery);
+
+// FOR CONTACT ME BUTTON
+document.querySelector('.action-btn').addEventListener('click', function(e) {
+	e.preventDefault();
+	document.querySelector(this.getAttribute('href')).scrollIntoView({
+		behavior : 'smooth'
+	});
+});
