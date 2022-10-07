@@ -3445,7 +3445,6 @@ html {
 	display: block;
 	background-color: var(--light-purple);
 	color: white;
-	margin-right: 1.125em;
 	padding: .25em 1em;
 	border-radius: 5px;
 	cursor: pointer;
@@ -3515,6 +3514,9 @@ input[type="text"], input[type="email"], textarea {
 @media screen and (max-width: 736px) {
 	.action-btn {
 		font-size: 12pt;
+	}
+	.proj-btns {
+		justify-content: center;
 	}
 }
 
